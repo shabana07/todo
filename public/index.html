@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+<script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyBdP-Mrz_xduUT3ZQua9Dd9ox1efkBsTvQ",
+      authDomain: "todo-61908.firebaseapp.com",
+      databaseURL: "https://todo-61908-default-rtdb.firebaseio.com",
+      projectId: "todo-61908",
+      storageBucket: "todo-61908.appspot.com",
+      messagingSenderId: "476307701953",
+      appId: "1:476307701953:web:d83fe4a32fe44422d39440"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+<script src="https://kit.fontawesome.com/480a7d683a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="far fa-check-circle fa-3x"></i>
+            <h2>Todo List</h2>
+        </div>
+        <div class="body">
+            <ul id="main"></ul>
+        </div>
+        <div class="footer">
+            <input type="text" id="input">
+            <button onclick="addItem()"><i class="fas fa-plus fa-2x"></i></button>
+            <button onclick="delAll()"><i class="far fa-trash-alt fa-2x"></i>  </button>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
